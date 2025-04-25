@@ -1,3 +1,6 @@
+# sandbox project is being ignored
+/sandbox
+
 # Compiled class file
 *.class
 
