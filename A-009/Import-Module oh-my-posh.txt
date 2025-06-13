@@ -1,0 +1,2 @@
+Import-Module oh-my-posh
+oh-my-posh --init --shell pwsh --config "C:\Users\tom.vervoort\Documents\oh-my-posh-conf\powerlevel10k_rainbow.omp.json" | Invoke-Expression
