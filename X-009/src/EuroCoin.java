@@ -11,9 +11,12 @@ public enum EuroCoin {
 
     //initialisierung der konstanten
     final int cents;
+
     //constructor
      EuroCoin(int Cents) {
-        cents=Cents;
-    }
-    int getCents() { return cents;}
+         cents=Cents;
+     }
+    int getCents() {
+         return cents;
+     }
 }
