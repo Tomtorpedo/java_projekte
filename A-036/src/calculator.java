@@ -2,7 +2,6 @@ public class calculator {
     double intermediateResult=0;
     //
     public calculator() {
-        this.intermediateResult=0;
     }
     public calculator(double Startwert) {
         this.intermediateResult=Startwert;
