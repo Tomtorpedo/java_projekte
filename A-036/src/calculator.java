@@ -1,7 +1,8 @@
 public class calculator {
-    double intermediateResult=0;
+    double intermediateResult;
     //
     public calculator() {
+        this(0);
     }
     public calculator(double Startwert) {
         this.intermediateResult=Startwert;
