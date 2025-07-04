@@ -8,8 +8,9 @@ public class Vehicle {
         this.mileage=Mileage;
     }
     //methods
-    void printInformation() {
-        System.out.print("\nmodel: "+this.model+", mileage: "+this.mileage);
 
+    @Override
+    public String toString() {
+        return"\nmodel: "+this.model+", mileage: "+this.mileage;
     }
 }

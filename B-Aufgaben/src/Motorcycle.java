@@ -8,8 +8,7 @@ public class Motorcycle extends  Vehicle {
     }
 
     @Override
-    void printInformation() {
-        super.printInformation();
-        System.out.print(", isPillionRiderCapable: "+isPillionRiderCapable);
+    public String toString() {
+        return"\nmodel: "+this.model+", mileage: "+this.mileage+", isPillionRiderCapable: "+isPillionRiderCapable;
     }
 }
