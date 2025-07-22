@@ -4,5 +4,7 @@ public class Main {
         Motorcycle motorcycle = new Motorcycle("Simson Schwalbe",9876,true);
         System.out.println(car.toString());
         System.out.println(motorcycle.toString());
+//        car.start();
+//        motorcycle.start();
     }
 }

@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     //variables
     String model;
     int mileage;
@@ -13,4 +13,5 @@ public class Vehicle {
     public String toString() {
         return"\nmodel: "+this.model+", mileage: "+this.mileage;
     }
+    public abstract void start();
 }

@@ -9,6 +9,11 @@ public class Motorcycle extends  Vehicle {
 
     @Override
     public String toString() {
-        return"\nmodel: "+this.model+", mileage: "+this.mileage+", isPillionRiderCapable: "+isPillionRiderCapable;
+        return super.toString()+", isPillionRiderCapable: "+isPillionRiderCapable;
+    }
+
+    @Override
+    public void start() {
+        System.out.println("prött prött prött");
     }
 }
