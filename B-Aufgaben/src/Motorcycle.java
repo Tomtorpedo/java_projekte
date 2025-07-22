@@ -1,4 +1,4 @@
-public class Motorcycle extends  Vehicle {
+public class Motorcycle extends  Vehicle implements Startable {
     //methods
     boolean isPillionRiderCapable;
 
@@ -13,7 +13,7 @@ public class Motorcycle extends  Vehicle {
     }
 
     @Override
-    public void start() {
-        System.out.println("prött prött prött");
+    public String start() {
+        return "prött prött prött";
     }
 }

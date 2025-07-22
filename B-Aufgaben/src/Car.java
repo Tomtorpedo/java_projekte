@@ -1,10 +1,10 @@
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Startable {
     public Car(String Model, int Mileage) {
         super(Model, Mileage);
     }
 
     @Override
-    public void start() {
-        System.out.println("wroom");
+    public String start() {
+        return "wroom";
     }
 }

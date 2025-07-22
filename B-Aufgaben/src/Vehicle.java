@@ -1,7 +1,8 @@
-public abstract class Vehicle {
+public class Vehicle implements Refuelable{
     //variables
     String model;
     int mileage;
+    float liters;
     //constructor
     public Vehicle(String Model, int Mileage) {
         this.model=Model;
@@ -10,8 +11,13 @@ public abstract class Vehicle {
     //methods
 
     @Override
+    public void refuel(float liters) {
+        this.liters=liters;
+    }
+
+    @Override
     public String toString() {
         return"\nmodel: "+this.model+", mileage: "+this.mileage;
     }
-    public abstract void start();
+    //refuel wird als interface implementiert um auch E-Autos abbilden zu können, da diese ja nicht tanken
 }
