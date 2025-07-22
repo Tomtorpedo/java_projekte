@@ -2,17 +2,18 @@ public class Vehicle implements Refuelable{
     //variables
     String model;
     int mileage;
-    float liters;
+    float tank;
     //constructor
-    public Vehicle(String Model, int Mileage) {
+    public Vehicle(String Model, int Mileage,float Tank) {
         this.model=Model;
         this.mileage=Mileage;
+        this.tank=Tank;
     }
     //methods
 
     @Override
     public void refuel(float liters) {
-        this.liters=liters;
+        this.tank+=liters;
     }
 
     @Override

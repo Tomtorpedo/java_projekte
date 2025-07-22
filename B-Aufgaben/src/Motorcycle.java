@@ -2,8 +2,8 @@ public class Motorcycle extends  Vehicle implements Startable {
     //methods
     boolean isPillionRiderCapable;
 
-    public Motorcycle(String Model, int Mileage, boolean isPillionRiderCapable) {
-        super(Model, Mileage);
+    public Motorcycle(String Model, int Mileage,float Tank, boolean isPillionRiderCapable) {
+        super(Model, Mileage, Tank);
         this.isPillionRiderCapable=isPillionRiderCapable;
     }
 
