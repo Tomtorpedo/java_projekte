@@ -1,6 +1,6 @@
 public class Motorcycle extends  Vehicle implements Startable {
     //methods
-    boolean isPillionRiderCapable;
+    private boolean isPillionRiderCapable;
 
     public Motorcycle(String Model, int Mileage,float Tank, boolean isPillionRiderCapable) {
         super(Model, Mileage, Tank);
@@ -15,5 +15,13 @@ public class Motorcycle extends  Vehicle implements Startable {
     @Override
     public String start() {
         return "prött prött prött";
+    }
+
+    public boolean getPillion(){
+        return this.isPillionRiderCapable;
+    }
+
+    public void setPillion(boolean IsPillionRiderCapable){
+        this.isPillionRiderCapable=IsPillionRiderCapable;
     }
 }

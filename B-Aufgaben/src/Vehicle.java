@@ -1,8 +1,8 @@
 public class Vehicle implements Refuelable{
     //variables
-    String model;
-    int mileage;
-    float tank;
+    private String model;
+    private int mileage;
+    private float tank;
     //constructor
     public Vehicle(String Model, int Mileage,float Tank) {
         this.model=Model;
@@ -20,5 +20,26 @@ public class Vehicle implements Refuelable{
     public String toString() {
         return"\nmodel: "+this.model+", mileage: "+this.mileage;
     }
-    //refuel wird als interface implementiert um auch E-Autos abbilden zu können, da diese ja nicht tanken
+
+    public String getModel(){
+        return this.model;
+    }
+
+    public int getMileage(){
+        return this.mileage;
+    }
+
+    public void setMileage(int Mileage){
+        if (Mileage<0)
+            throw new IllegalArgumentException("Invalid milage: "+Mileage);
+        this.mileage=Mileage;
+    }
+
+    public void setModel(String Model){
+        if (Model==null || Model.isEmpty())
+            throw new IllegalArgumentException("Invalid model: "+Model);
+        this.model=Model;
+    }
+
+
 }
